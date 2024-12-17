@@ -13,65 +13,114 @@
 </head>
 <body class=" todo border-2 p-2 m-2 br-3">  <form action="index.html" method="post" enctype="application/x-www-form-urlencoded"></form>
 </head>
- 
-    <div class="form-check">
+ <div class ="container">
+    <div class="form-check border start 0 bg-light">
       <h1>Payment form example </h1>
       
      </div>
    
     <br>
   
-    <div class="input-group flex-nowrap">
-    <span class="input-group-text" id="addon-wrapping">card</span>
-    <input type="text" class="form-control" placeholder="xxxx xxxx xxxx xxxx" aria-label="Username" aria-describedby="addon-wrapping">
-    <span class="input-group-text" id="addon-wrapping">CVC</span>
-    <input type="text" class="form-control" placeholder="xxxx xxxx xxxx xxxx" aria-label="Username" aria-describedby="addon-wrapping">
-    <span class="input-group-text" id="addon-wrapping">Amount</span>
-    <input type="text" class="form-control" placeholder="xxxx xxxx xxxx xxxx" aria-label="Username" aria-describedby="addon-wrapping">
-
-
-  </div>
-  
-   <br>
-    <div class="input-group mb-3">
-      <label for="basic-url" class="form-label">First Name</label>      Second Name
-
-      <div class="input-group">
-        <label for="basic-url" class="form-label">Second Name</label>   
-      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-     <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-    </div>
-    </div>
-    
-    <div class="mb-3">
-      <label for="basic-url" class="form-label">Your vanity URL</label>
-      <div class="input-group">
-        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+    <div class="input-group flex-nowrap row 5">
+      <div class="mb-3 col-sm-5 pb-1">
+        <label for="example1" class="form-label">Card</label>
+       <input type="text" class="form-control" placeholder="xxxx xxxx xxxx xxxx" aria-label="Card" aria-describedby="addon-wrapping">
       </div>
-      <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
-    </div>
+      <div class="mb-3 col-sm-2 pb-1">
+        <label for="example1" class="form-label">CVC #</label>
+        <input type="text" class="form-control" placeholder="0000" aria-label="CVC" aria-describedby="addon-wrapping"></div>
+      <div class="mb-3 col-sm-3 pb-1">
+        <label for="example1" class="form-label">Amount </label>
+        $<input type="text" class="form-control" placeholder="Amount" aria-label="Amount" aria-describedby="addon-wrapping"></div>
     
-    <div class="input-group mb-3">
-      <span class="input-group-text">$</span>
-      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-      <span class="input-group-text">.00</span>
+      </div>
+      <div class="input-group flex-nowrap row 5">
+
+   <div class="mb-3 col-sm-6 pb-1">
+     <label for="Name" class="form-label">First Name</label>      
+     <input type="text" class="form-control" id="Name" placeholder="First Name" aria-label="FirstName" aria-describedby="addon-wrapping">
     </div>
+     <div class="mb-3 col-sm-6 pb-1 row 3">
+
+       <label for="LastName" class="form-label">Last Name</label>      
+       <input type="text" class="form-control" id="LastName" placeholder="Last Name" aria-label="FirstName" aria-describedby="addon-wrapping">
+    </div></div>
+
+    <div class="input-group flex-nowrap row 5">
+      <div class="mb-3 col-sm-5 pb-1">
+        <label for="City" class="form-label">City</label>
+       <input type="text" class="form-control" placeholder="Córdoba" aria-label="City" aria-describedby="addon-wrapping">
+      </div>
+      <div class="mb-3 col-sm-2 pb-1">
+        <label for="State" class="form-label">State</label> <select class="form-control custom-select" id="State">
+          <option class="text-white bg-warning">
+            Pick a state
+          </option>
+          <option value="AL">
+            España
+          </option>
+
+        <input type="text" class="form-control" placeholder="" aria-label="State" aria-describedby="addon-wrapping">
+        
+      </div>
+      <div class="mb-3 col-sm-3 pb-1">
+        <label for="PostalCode" class="form-label">Postal Code </label>
+        <input type="text" class="form-control" placeholder="Postal Code" aria-label="PostalCode" aria-describedby="addon-wrapping"></div>
     
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-      <span class="input-group-text">@</span>
-      <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+      </div>
+       
+      <div class="input-group flex-nowrap row 5 pb-6">
+     
+       
+    <div class="mb-3 col-sm-3 pb-9">
+      
+        <label for="buttons" class="form-label">We Accept </label>   
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-secondary">
+            <input autocomplete="off" checked id="blue" name="options" type="radio">
+            <i class="fab fa-cc-mastercard"></i>
+          </label> 
+          <label class="btn btn-secondary">
+            <input autocomplete="off" id="red" name="options" type="radio">
+            <i class="fab fa-cc-visa"></i>
+          </label> 
+          <label class="btn btn-secondary">
+            <input autocomplete="off" id="green" name="options" type="radio">
+            <i class="fab fa-cc-diners-club"></i>
+          </label> 
+          <label class="btn btn-secondary">
+            <input autocomplete="off" id="yellow" name="options" type="radio">
+            <i class="fab fa-cc-amex"></i>
+          </label> 
+        </div>     </div> 
+        <div class="Message col-sm-8 pb-5">
+          <label for="Message">Message</label> 
+          <textarea class="form-control" id="textMessage" rows="5" aria-label="Message" aria-describedby="addon-wrapping"
+            ></textarea> 
+          <small class="text-muted">Add any notes here.</small> </div>
+        
     </div>
-    
-    <div class="input-group">red
-      <span class="input-group-text">With textarea</span>
-      <textarea class="form-control" aria-label="With textarea"></textarea>
-    </div> >
-  
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>   
- 
+     
+        
+			</div>
+			<div class="card-footer gap-2 d-md-flex justify-content-md-end">
+        
+				<div class="float">
+          <button class="btn btn-secondary" type="reset">Cancel</button> 
+					<button id="sendForm" class="btn btn-primary" type="button" />Send</button>
+				</div>
+			</div>
+      
+               
+       </div>
+       <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+       <!-- Bootstrap Functionalities link  -->
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+         crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+         crossorigin="anonymous"></script>
   </div>
 
   </body>
